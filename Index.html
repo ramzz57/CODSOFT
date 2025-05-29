@@ -2,119 +2,156 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>TastyBites - Fresh & Delicious</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>G Ramya | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Simple CSS inside for preview (you can move this to style.css) */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    header {
+      background: #2c3e50;
+      color: #fff;
+      text-align: center;
+      padding: 30px 10px;
+    }
+    nav {
+      background: #34495e;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .about-content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+    .about-content img {
+      border-radius: 50%;
+      width: 180px;
+      margin-bottom: 20px;
+    }
+    .skills span {
+      background: #2980b9;
+      color: white;
+      padding: 10px 15px;
+      margin: 5px;
+      display: inline-block;
+      border-radius: 5px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      margin: 10px 0;
+      border-left: 5px solid #3498db;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    #resume a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #27ae60;
+      color: white;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    #resume a:hover {
+      background: #1e8449;
+    }
+    footer {
+      text-align: center;
+      background: #2c3e50;
+      color: white;
+      padding: 15px 0;
+      margin-top: 30px;
+    }
+    @media (max-width: 600px) {
+      .about-content {
+        flex-direction: column;
+      }
+    }
+  </style>
 </head>
 <body>
-
-  <!-- Header -->
   <header>
-    <div class="container">
-      <h1 class="logo">TastyBites</h1>
-      <nav>
-        <ul class="nav-links">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Menu</a></li>
-          <li><a href="#">About</a></li>
-        </ul>
-      </nav>
-    </div>
+    <h1>G Ramya</h1>
+    <p>Web Designer | BCA Student</p>
   </header>
 
-  <!-- Hero Section -->
-  <section class="hero">
-    <div class="container">
-      <h2>Delicious Food Delivered To You</h2>
-      <p>Fresh, fast, and full of flavor. Order your favorite meal now!</p>
-      <a href="#" class="cta-button">Order Now</a>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#resume">Resume</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about" class="container">
+    <h2>About Me</h2>
+    <div class="about-content">
+      <img src="Ramya.jpg" alt="G Ramya">
+      <p>Hello! I'm <strong>G Ramya</strong>, a passionate BCA student at Chevalier T Thomas Elizabeth College for Women with strong interest in front-end development. I enjoy creating responsive, creative web designs using HTML, CSS, and JavaScript. I'm fluent in Tamil and English.</p>
     </div>
   </section>
 
-  <!-- Features -->
-  <section class="features">
-    <div class="container">
-      <div class="feature-box">
-        <h3>Fresh Ingredients</h3>
-        <p>We use only the freshest veggies, meat, and spices.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Fast Delivery</h3>
-        <p>Your order is prepared quickly and reaches you hot & fresh.</p>
-      </div>
-      <div class="feature-box">
-        <h3>Top Dishes</h3>
-        <p>Choose from pizzas, burgers, salads, and more!</p>
-      </div>
+  <section id="skills" class="container">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>JavaScript</span>
+      <span>Python</span>
+      <span>GitHub</span>
     </div>
   </section>
 
-  <!-- Menu Section -->
-  <section class="menu">
-    <div class="container">
-      <h2 class="section-title">Our Top Picks</h2>
-      <div class="menu-items">
-        <div class="menu-card">
-          <img src="https://source.unsplash.com/300x200/?pizza" alt="Pizza">
-          <h3>Margherita Pizza</h3>
-          <p>Classic cheese & tomato pizza.</p>
-          <span>₹199</span>
-        </div>
-        <div class="menu-card">
-          <img src="https://source.unsplash.com/300x200/?burger" alt="Burger">
-          <h3>Veggie Burger</h3>
-          <p>Loaded with fresh lettuce and sauces.</p>
-          <span>₹149</span>
-        </div>
-        <div class="menu-card">
-          <img src="https://source.unsplash.com/300x200/?salad" alt="Salad">
-          <h3>Green Salad</h3>
-          <p>Healthy and fresh greens tossed with vinaigrette.</p>
-          <span>₹99</span>
-        </div>
-      </div>
+  <section id="projects" class="container">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>ATM Money Distributor</h3>
+      <p>A Python-based mini project that simulates ATM withdrawal logic using Object-Oriented Programming.</p>
+    </div>
+    <div class="project-card">
+      <h3>Attendance Checker</h3>
+      <p>A tool to automate student attendance records with visual output, built using Python logic.</p>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section class="contact">
-    <div class="container">
-      <h2 class="section-title">Get in Touch</h2>
-      <form class="contact-form">
-        <input type="text" placeholder="Your Name" required>
-        <input type="email" placeholder="Your Email" required>
-        <textarea placeholder="Your Message" rows="4" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+  <section id="resume" class="container">
+    <h2>Resume</h2>
+    <a href="resume.pdf" download>Download My Resume</a>
   </section>
 
-  <!-- Footer -->
+  <section id="contact" class="container">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="mailto:ramyaramyag4@gmail.com">ramyaramyag4@gmail.com</a></p>
+    <p>Phone: <a href="tel:+9170100629660">+91-70100629660</a></p>
+  </section>
+
   <footer>
-    <div class="container">
-      <p>© 2025 TastyBites. Made with ❤️ for food lovers.</p>
-    </div>
+    <p>&copy; 2025 G Ramya. Designed with passion.</p>
   </footer>
-
-  <!-- Scroll Reveal Animation Script -->
-  <script>
-    const elements = document.querySelectorAll('.feature-box, .menu-card, .contact-form');
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.style.animation = "fadeIn 1s ease forwards";
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.1 });
-
-    elements.forEach(el => {
-      el.style.opacity = 0;
-      observer.observe(el);
-    });
-  </script>
-
 </body>
 </html>
-
