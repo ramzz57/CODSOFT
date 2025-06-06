@@ -1,1 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TastyBites - Fresh & Delicious</title>
 
+  <style>
+    /* Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff9f0;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      text-align: center;
+      padding: 30px;
+    }
+
+    /* Header */
+    header {
+      background-color: #ff6f61;
+      color: white;
+      padding: 40px 20px;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    /* Navigation */
+    nav {
+      background-color: #ffab91;
+      padding: 10px;
+      text-align: center;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    /* Hero Section */
+    .hero {
+      background-color: #fff3e0;
+      text-align: center;
+      padding: 50px 20px;
+    }
+
+    .hero h2 {
+      font-size: 2.5rem;
+      color: #d84315;
+      margin-bottom: 15px;
+    }
+
+    .hero p {
+      font-size: 1.1rem;
+      margin-bottom: 25px;
+    }
+
+    .hero button {
+      background-color: #ff7043;
+      color: white;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .hero button:hover {
+      background-color: #e64a19;
+    }
+
+    /* Features */
+    .features {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 20px;
+      padding: 40px 20px;
+      background-color: #ffe0b2;
+    }
+
+    .feature-box {
+      background-color: #ffd180;
+      padding: 20px;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.1rem;
+      color: #4e342e;
+      box-shadow: 2px 2px 8px rgba(0,0,0,0.1);
+    }
+
+    /* Menu Section */
+    .menu {
+      background-color: #fbe9e7;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .menu h2 {
+      color: #d84315;
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background-color: #ffccbc;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .menu-item h3 {
+      color: #bf360c;
+      margin-bottom: 8px;
+    }
+
+    .menu-item p {
+      font-size: 0.95rem;
+      color: #4e342e;
+    }
+
+    /* Contact Section */
+    .contact {
+      background-color: #fff3e0;
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    .contact h2 {
+      font-size: 2rem;
+      color: #d84315;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      max-width: 500px;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .contact input,
+    .contact textarea {
+      padding: 12px;
+      border: 2px solid #ffab91;
+      border-radius: 8px;
+      font-size: 1rem;
+      width: 100%;
+    }
+
+    .contact button {
+      background-color: #ff7043;
+      color: white;
+      padding: 12px;
+      border: none;
+      border-radius: 8px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    .contact button:hover {
+      background-color: #e64a19;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="container">
+      <h1>TastyBites</h1>
+      <p>Fresh. Flavorful. Fast.</p>
+    </div>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#menu">Menu</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Enjoy Delicious Dishes Anytime</h2>
+    <p>Your favorite food delivered hot & fresh at your doorstep.</p>
+    <button>Order Now</button>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-box">✨ Fresh Ingredients</div>
+    <div class="feature-box">⏱ Fast Delivery</div>
+    <div class="feature-box">🔥 Spicy Specials</div>
+    <div class="feature-box">🍽 Great Taste</div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="menu" id="menu">
+    <h2>Our Menu</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <h3>Veggie Delight</h3>
+        <p>Fresh seasonal vegetables sautéed in mild spices.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Cheesy Pasta</h3>
+        <p>Rich creamy pasta topped with extra cheese and herbs.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Spicy Paneer Wrap</h3>
+        <p>Paneer tikka wrapped in soft roti with tangy sauce.</p>
+      </div>
+      <div class="menu-item">
+        <h3>Mango Smoothie</h3>
+        <p>Chilled mango blended with yogurt and a hint of honey.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TastyBites. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
